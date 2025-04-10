@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <SearchBar />
+      {/* <SearchBar /> */}
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/store" element={<Store />} />

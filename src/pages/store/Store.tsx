@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { FaSpinner } from "react-icons/fa"; // آیکون اسپینر
 import ProductCard from "../../components/ProductCard/ProductCard";
+import SearchBar from "../../components/search/Searchbar";
 
 interface Product {
   id: number;
@@ -46,6 +47,9 @@ const Store: React.FC = () => {
   if (error) return <p className="text-center text-red-400">{error}</p>;
 
   return (
+    <>
+    
+    <SearchBar />
     <div className="bg-black min-h-screen text-white px-4 py-8">
       <h1 className="text-3xl font-bold text-orange-400 text-center mb-8">
         cloths
@@ -57,6 +61,7 @@ const Store: React.FC = () => {
         ))}
       </div>
     </div>
+    </>
   );
 };
 
