@@ -2,7 +2,6 @@ import { Route, Routes } from "react-router-dom";
 import HomePage from "./pages/Home/HomePage";
 import Store from "./pages/store/Store";
 import Navbar from "./components/navbar/Navbar";
-import SearchBar from "./components/search/Searchbar";
 import ProductDetail from "./pages/productdetail/ProductDetail";
 import Cart from "./pages/Cart";
 import ProtectedRoute from "./components/ProtectedRoute";
