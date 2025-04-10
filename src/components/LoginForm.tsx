@@ -26,6 +26,8 @@ const LoginForm = () => {
   const onSubmit = (data: FormData) => {
       login();
       navigate('/cart');
+      console.log(data);
+      
   };
 
   
