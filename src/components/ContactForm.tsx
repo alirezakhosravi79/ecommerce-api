@@ -15,7 +15,7 @@ const ContactForm = () => {
   const {
     register,
     handleSubmit,
-    formState: { errors, isSubmitSuccessful },
+    formState: { errors,  },
     reset
   } = useForm<FormData>({
     resolver: zodResolver(schema),
